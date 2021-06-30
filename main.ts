@@ -1,7 +1,9 @@
 function evaluateGuess (text: string) {
     match = 0
-    for (let guess = 0; guess <= picnicFoodList.length; guess++) {
-    	
+    for (let guess = 0; guess <= picnicFoodList.length - 1; guess++) {
+        if (picnicFoodList[guess] == text) {
+            match = 1
+        }
     }
 }
 let match = 0
